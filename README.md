@@ -27,8 +27,6 @@ Computational Modelling and Analysis of a Biological Network
 
     Biological networks often include feedback loops.
     Negative autoregulation: a transcription factor represses its own transcription, described by a decreasing Hill function.
-    <img width="213" alt="Screenshot 2024-05-31 at 12 47 44 PM" src="https://github.com/ipsi1999/Computational-Modelling-and-Analysis-of-a-Biological-Network/assets/47393053/56e4bbc7-cf4c-41fb-b660-51b779d342f3">
-
     Positive autoregulation: a transcription factor enhances its own transcription, described by an increasing Hill function.
 
 2.3 Background of MAPK Signaling Pathway:
