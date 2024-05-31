@@ -1,33 +1,38 @@
-# Bioengineering-Projects
-Lab 11: Computational Modeling and Analysis of Biological Networks
-1. Objectives
+Computational Modelling and Analysis of a Biological Network
 
-    Learn how to create and simulate computational models of biological networks to understand their mechanisms at a system level.
+1. Objective:
+
+    Learn to create and simulate computational models of biological networks to gain a comprehensive understanding of their underlying mechanisms.
     Understand mathematical modeling of biological interactions.
-    Solve ordinary differential equations (ODEs) using MATLAB.
+    Solve ordinary differential equations (ODEs) in MATLAB.
     Model and analyze the dynamics of cell signaling pathways through simulations.
 
-2. Background
-2.1 Systematic Study of Biological Systems
-Cellular behavior is influenced by numerous interacting molecules forming complex networks. The phenotype of a cellular system emerges from these complex molecular interactions.
+2. Background:
 
-2.2 Mathematical Modeling Techniques
+2.1 Systematic Study of Biological Systems:
 
-2.2.1 Regulation Circuits
+    Cellular behavior is determined by interactions among many molecules forming a complex network.
+    The phenotype of a cellular system results from these intricate molecular interactions.
+    To predict biological properties, constructing, simulating, and analyzing mathematical models of these interactions is essential.
 
-Different types of regulation circuits (such as positive and negative feedback loops) can influence the behavior and dynamics of biological systems. For example, a transcription factor can either repress (negative feedback) or enhance (positive feedback) its own production.
+2.2 Mathematical Modeling of Biological Interactions:
 
-2.2.2 Solving ODEs in MATLAB
+2.2.1 Dynamics of Simple Regulation:
 
-Dynamic equations can be solved in MATLAB using built-in ODE solvers like ode15s or ode45. These solvers execute a function file with ODE equations and provide results within a simulation time based on initial conditions and parameters.
+    Dynamics of a basic interaction in a biological network, referred to as ‘simple regulation’, is described.
+    For example, molecule X is produced by Y at a rate ββ and degraded by itself at a rate αα.
+    The concentration of X changes over time, converging to a steady-state value where production and degradation rates balance.
 
-2.2.3 Law of Mass Action
+2.2.2 Positive and Negative Autoregulation:
 
-The law of mass action models the interactions of biochemical molecules, explaining how the reaction rate is proportional to the concentration of reactants.
+    Biological networks often include feedback loops.
+    Negative autoregulation: a transcription factor represses its own transcription, described by a decreasing Hill function.
+    <img width="213" alt="Screenshot 2024-05-31 at 12 47 44 PM" src="https://github.com/ipsi1999/Computational-Modelling-and-Analysis-of-a-Biological-Network/assets/47393053/56e4bbc7-cf4c-41fb-b660-51b779d342f3">
 
-2.2.4 Michaelis-Menten Kinetics
+    Positive autoregulation: a transcription factor enhances its own transcription, described by an increasing Hill function.
 
-Michaelis-Menten kinetics describes the rate of enzymatic reactions by relating the reaction rate to the substrate concentration. This model involves the formation of an enzyme-substrate complex that converts to a product.
+2.3 Background of MAPK Signaling Pathway:
 
-
-The mitogen-activated protein kinase (MAPK) cascades are key components in eukaryotic signal transduction, conserved across various species. These pathways relay extracellular signals to the cell's interior, initiating diverse responses such as cell growth and stress responses. The pathway consists of three levels where kinases phosphorylate downstream targets, and phosphatases inactivate them.
+    MAPK (Mitogen-Activated Protein Kinase) cascades are involved in eukaryotic signal transduction, conserved from yeast to mammals.
+    They relay extracellular signals to intracellular targets, affecting cell growth, differentiation, and stress responses.
+    The pathway involves phosphorylation cascades, where MAPKs are activated by MAPK kinases (MKKs), which are activated by MAPK kinase kinases (MKKKs).
